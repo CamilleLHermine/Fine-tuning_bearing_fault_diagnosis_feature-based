@@ -27,16 +27,25 @@ o	12 frequency-domain features (e.g., frequency mean, gravity frequency, spectra
 **Description of the Notebook key steps:**
 
 _Data Science & Signal Processing:_
-o	**Time-Series Analysis:** Processed and manipulated raw vibration signals from .mat files using NumPy.
-o	**Feature Engineering**: Extracted 24 distinct time-domain and frequency-domain features (e.g., mean, standard deviation, kurtosis, spectral skewness) to create a robust representation of the signal state.
-o	**Data Segmentation:** Implemented a sliding window technique to segment continuous time-series data into uniform samples for model training.
+
+1.	**Time-Series Analysis:** Processed and manipulated raw vibration signals from .mat files using NumPy.
+2.	**Feature Engineering**: Extracted 24 distinct time-domain and frequency-domain features (e.g., mean, standard deviation, kurtosis, spectral skewness) to create a robust representation of the signal state.
+3.	**Data Segmentation:** Implemented a sliding window technique to segment continuous time-series data into uniform samples for model training.
+
+   
 _Natural Language Processing (NLP) & LLMs:_
-o	**Feature Textualization:** Engineered a method to convert numerical features into structured, descriptive natural language prompts, effectively bridging the gap between traditional signal processing and modern LLMs .
-o	**LLM Fine-Tuning:** Leveraged the transformers library to fine-tune the ChatGLM2-6B model, a 6-billion parameter LLM, for a specialized sequence classification task.
-o	**Parameter-Efficient Fine-Tuning :** Implemented Low-Rank Adaptation (LoRA) to efficiently train the LLM, reducing trainable parameters by over 99.9% while retaining performance. (memory-efficient finetuning strategy).
+
+
+5.	**Feature Textualization:** Engineered a method to convert numerical features into structured, descriptive natural language prompts, effectively bridging the gap between traditional signal processing and modern LLMs .
+6.	**LLM Fine-Tuning:** Leveraged the transformers library to fine-tune the ChatGLM2-6B model, a 6-billion parameter LLM, for a specialized sequence classification task.
+7.	**Parameter-Efficient Fine-Tuning :** Implemented Low-Rank Adaptation (LoRA) to efficiently train the LLM, reducing trainable parameters by over 99.9% while retaining performance. (memory-efficient finetuning strategy).
+
+   
 _•	Training :_
-o	Utilized the Hugging Face Trainer API to manage the training pipeline, including setting TrainingArguments and defining performance metrics.
-o	Developed custom Dataset classes in PyTorch to handle the tokenization, padding, and batching of textualized data for the LLM.
+
+
+9.	Utilized the Hugging Face Trainer API to manage the training pipeline, including setting TrainingArguments and defining performance metrics.
+10.	Developed custom Dataset classes in PyTorch to handle the tokenization, padding, and batching of textualized data for the LLM.
 
 
 **How to Run:**
